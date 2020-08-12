@@ -1,0 +1,61 @@
+<resources>
+
+    <string name="app_name">My Cash - Carteira Digital</string>
+    <string name="login">Login</string>
+    <string name="senha">Senha</string>
+    <string name="entrar">Entrar</string>
+    <string name="saldo">Saldo:R$ 0,00</string>
+    <string name="valor_es">Valor de Entrada ou Saída:</string>
+    <string name="descricao">Descrição</string>
+    <string name="ganhos">Ganhos:</string>
+    <string name="salario">Salário</string>
+    <string name="extra">Extra</string>
+    <string name="outros_g">Outros Ganhos</string>
+    <string name="despesas">Despesas:</string>
+    <string name="alimento">Alimentação</string>
+    <string name="aluguel">Aluguel</string>
+    <string name="agua">Água</string>
+    <string name="energia">Energia</string>
+    <string name="cartao">Cartão de Crédito</string>
+    <string name="combustivel">Combustivel</string>
+    <string name="lazer">Lazer</string>
+    <string name="outras_d">Outras Dispesas</string>
+    <string name="graf">Gráfico:</string>
+    <string name="tipo_g">Tipo de ganho</string>
+    <string name="valor_ent">Valor de  entrada</string>
+    <string name="add_g">Novo Ganho</string>
+    <string name="ok">Confirmar</string>
+    <string name="saida_grana">Novo Gasto</string>
+    <string name="valor_sai">Valor do gasto</string>
+    <string name="tipo_sai">Tipo de gasto</string>
+    <string name="rel_gra">Relatorios</string>
+    <string name="info">Informações</string>
+
+    <!-- Array do spinner container na tela de cadastro de ganhos -->
+    <string name="salary">Salário</string>
+    <string name="extras">Extras</string>
+    <string name="others">Outros</string>
+
+    <!-- Array do spinner container na tela de cadastro de gastos -->
+    <string name="food">Alimentação</string>
+    <string name="rent">Aluguel</string>
+    <string name="water">Água</string>
+    <string name="electricity">Energia</string>
+    <string name="credit_card">Cartão de crédito</string>
+    <string name="fuel">Combustível</string>
+    <string name="recreation">Lazer</string>
+    <string name="others2">Outros</string>
+
+    <string name="titleDialog">Dica</string>
+    <string name="remember">Lembre-me</string>
+
+    <!-- Textos para o alert dialog do filtro por data -->
+    <string name="titleDialogFilterDate">Filtrar por data</string>
+    <string name="textButtonDateStart">Data inicial</string>
+    <string name="textButtonDateEnd">Data final</string>
+    <string name="textButtonCancel">Cancelar</string>
+
+    <!-- Hint do SearchView -->
+    <string name="hintSearView">Pesquisar...</string>
+
+</resources>
