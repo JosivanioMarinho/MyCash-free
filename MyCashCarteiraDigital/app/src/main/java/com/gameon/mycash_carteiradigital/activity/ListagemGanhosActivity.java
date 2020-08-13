@@ -98,7 +98,7 @@ public class ListagemGanhosActivity extends AppCompatActivity implements DatePic
                                 //Diálogo para confirmar exclusão
                                 AlertDialog.Builder alertDialog = new AlertDialog.Builder(ListagemGanhosActivity.this);
                                 alertDialog.setTitle("Confirmar exclusão ");
-                                alertDialog.setMessage("Deseja escluir este item?");
+                                alertDialog.setMessage("Deseja excluir este item?");
 
                                 //Botão de positivo
                                 alertDialog.setPositiveButton("Sim", new DialogInterface.OnClickListener() {

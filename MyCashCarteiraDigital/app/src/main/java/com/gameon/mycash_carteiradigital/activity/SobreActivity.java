@@ -25,7 +25,7 @@ public class SobreActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         //Descrição
-        String descriition = "Desenvolvedores do App MyCash podem ser encontrados em:";
+        String descriition = getString(R.string.descricao_tela_sobre);
 
         //Versao do APP
         Element versionElement = new Element();

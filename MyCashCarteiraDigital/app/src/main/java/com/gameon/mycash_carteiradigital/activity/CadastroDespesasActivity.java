@@ -22,6 +22,11 @@ import com.gameon.mycash_carteiradigital.R;
 import com.gameon.mycash_carteiradigital.helper.OutputDAO;
 
 import com.gameon.mycash_carteiradigital.model.Output;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.google.android.material.textfield.TextInputEditText;
 
 import java.text.SimpleDateFormat;
@@ -69,6 +74,18 @@ public class CadastroDespesasActivity extends AppCompatActivity implements Adapt
                 saveSpences();
             }
         });
+
+        //Códigos para o AdMob
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+            }
+        });
+
+        AdView adView = findViewById(R.id.adViewDespesas);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
+
 
     }
 

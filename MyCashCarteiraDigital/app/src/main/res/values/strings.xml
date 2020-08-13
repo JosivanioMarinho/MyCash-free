@@ -55,7 +55,82 @@
     <string name="textButtonDateEnd">Data final</string>
     <string name="textButtonCancel">Cancelar</string>
 
+    <!-- Descrição da tela de sobre os desenvolvedores -->
+    <string name="descricao_tela_sobre">Desenvolvedores do App MyCash podem ser encontrados em:</string>
+
     <!-- Hint do SearchView -->
     <string name="hintSearView">Pesquisar...</string>
+
+    <!--  ______________________String para tradução em Espanhol____________________________ -->
+
+    <!-- Início tela home -->
+
+    <string name="app_name_espanhol">My Cash - Monedero digital</string>
+
+    <string name="descricao_ganhos_espanhol">Agregue ganancias o vea sus ingresos</string>
+    <string name="descricao_despesas_espanhol">Añadir gastos o ver gastos</string>
+    <string name="botao_add_ganho_despesa_espanhol">AÑADIR</string>
+    <string name="botao_consult_ganho_despesa_espanhol">LISTADO</string>
+
+    <string name="descricao_grafico__espanhol">Ver todas las actividades en pocas palabras</string>
+    <string name="botao_ganho_graficos_espanhol">GERENCIAS</string>
+    <string name="botao_despesas_graficos_espanhol">GASTOS</string>
+
+    <string name="descricao_sobre_nos_espanhol">Más información sobre los desarrolladores de aplicaciones</string>
+    <string name="botao_sobre_nos_espanhol">Sobre nosotros</string>
+
+    <!-- Fim tela home -->
+
+    <!-- Início tela de cadastro de Ganhos e Despesas -->
+
+    <string name="hint_input_valor_entrada_espanhol">Valor de entrada</string>
+    <string name="hint_input_descricao_espanhol">Descripción</string>
+    <string name="text_tipos_ganhos_espanhol">Tipo de ganancias</string>
+
+            <!-- textos do spinner de ganhos -->
+    <string name="text_salario_espanhol">Salario</string>
+    <string name="text_extras_espanhol">Extra</string>
+    <string name="text_outros_esppanhol">Otro</string>
+
+            <!-- texto de spinner de gastos -->
+    <string name="text_alimentacao_espanhol">Poder</string>
+    <string name="text_alugeul_espanhol">Alquiler</string>
+    <string name="text_agua_espanhol">Agua</string>
+    <string name="text_energia_espanhol">Energía</string>
+    <string name="text_cartao_crediito_espanhol">Tarjeta de crédito</string>
+    <string name="text_combustivel_espanhol">Combustible</string>
+    <string name="text_lazer_espanhol">Ocio</string>
+    <string name="text_outros_espanhol">Otro</string>
+
+    <string name="text_botao_salvar">Salvar</string>
+
+    <!-- Fim tela de cadastro de Ganhos -->
+
+    <!-- strings do Dialog para filtrar por data -->
+    <string name="text_filtro_data_espanhool">filtrar por fecha</string>
+    <string name="text_botao1_filtro_data_espanhol">fecha de inicio</string>
+    <string name="text_botao2_filtro_data_espanhol">última fecha</string>
+    <string name="text_botao_cancelar_filtro_data_espanhol">Cancelar</string>
+
+    <!-- Hint do SearchView -->
+    <string name="hintSearView_espanhol">Búsqueda...</string>
+
+    <!-- Descrição da tela de sobre os desenvolvedores -->
+    <string name="descricao_tela_sobre_espanhol">Los desarrolladores de la aplicación MyCash se pueden encontrar en:</string>
+
+    <!-- textos das toobar -->
+    <string name="text_toobar_tela_add_ganhos_espanhol">Añadir ganancia</string>
+    <string name="text_toobar_tela_listagem_ganhos_espanhol">Lista de ganancias</string>
+    <string name="text_toobar_tela_add_despesas_espanhol">Añadir gastos</string>
+    <string name="text_toobar_tela_listagem_despesas_espanhol">Listado de gastos</string>
+    <string name="text_toobar_grafico_ganhos_espanhol">Gráfico de ganancias</string>
+    <string name="text_toobar_grafico_despesas_espanhol">Gráfico de gastos</string>
+    <string name="text_toobar_sobre_nos_espanhol">Sobre nosotros</string>
+
+    <!-- textos para dialog de exclusao de itens -->
+    <string name="text_title_dialog_excluir_espanhol">Confirmar eliminación</string>
+    <string name="text_descricao_dialog_exccluir_espanhol">¿Desea eliminar este elemento?</string>
+    <string name="text_sim_dialog_excluir_espanhol">Sí</string>
+    <string name="text_nao_dialog_excluir_espanhol">No</string>
 
 </resources>
