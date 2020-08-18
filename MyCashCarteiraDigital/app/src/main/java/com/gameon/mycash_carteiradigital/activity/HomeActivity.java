@@ -24,7 +24,8 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_home);
-
+        //texto da toobar.
+        getSupportActionBar().setTitle(getString(R.string.app_name_espanhol));
         //Elevação da toobar
         getSupportActionBar().setElevation(0);
 
@@ -46,7 +47,7 @@ public class HomeActivity extends AppCompatActivity {
         saldo = input.totalEarning() -  output.totalSpending();
 
         //Visualização do saldo no textview
-        saldoText.setText("R$ " + String.format("%.2f", saldo));
+        saldoText.setText(getString(R.string.simbolo_Portugal) + String.format("%.2f", saldo));
     }
 
     //Função de mudança de tela que irá ser executada quando o botão for pressionado

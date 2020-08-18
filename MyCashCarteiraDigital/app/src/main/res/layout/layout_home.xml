@@ -62,7 +62,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="10dp"
                     android:gravity="center_horizontal"
-                    android:text="Adicione ganhos ou consulte seus rendimentos"
+                    android:text="@string/descricao_ganhos_espanhol"
                     android:textAlignment="center"
                     android:textColor="@android:color/black"
                     android:textSize="14sp" />
@@ -81,7 +81,7 @@
                     android:layout_weight="1"
                     android:gravity="center_horizontal"
                     android:onClick="ganhoTela"
-                    android:text="ADICIO"
+                    android:text="@string/botao_add_ganho_despesa_espanhol"
                     android:textAlignment="center"
                     android:textColor="@color/colorPrimary"
                     android:textSize="14sp" />
@@ -92,7 +92,7 @@
                     android:layout_weight="1"
                     android:gravity="center_horizontal"
                     android:onClick="consultarGanhos"
-                    android:text="CONSUL"
+                    android:text="@string/botao_consult_ganho_despesa_espanhol"
                     android:textAlignment="center"
                     android:textColor="@color/colorPrimary"
                     android:textSize="14sp" />
@@ -130,7 +130,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="10dp"
                     android:gravity="center_horizontal"
-                    android:text="Adicione gastos ou consulte despesas"
+                    android:text="@string/descricao_despesas_espanhol"
                     android:textAlignment="center"
                     android:textColor="@android:color/black"
                     android:textSize="14sp" />
@@ -149,7 +149,7 @@
                     android:layout_weight="1"
                     android:gravity="center_horizontal"
                     android:onClick="despesaTela"
-                    android:text="ADICIO"
+                    android:text="@string/botao_add_ganho_despesa_espanhol"
                     android:textAlignment="center"
                     android:textColor="@color/colorPrimary"
                     android:textSize="14sp" />
@@ -160,7 +160,7 @@
                     android:layout_weight="1"
                     android:gravity="center_horizontal"
                     android:onClick="consultarDespesas"
-                    android:text="CONSUL"
+                    android:text="@string/botao_consult_ganho_despesa_espanhol"
                     android:textAlignment="center"
                     android:textColor="@color/colorPrimary"
                     android:textSize="14sp" />
@@ -198,7 +198,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="10dp"
                     android:gravity="center_horizontal"
-                    android:text="Veja todas atividades de forma resumida"
+                    android:text="@string/descricao_grafico__espanhol"
                     android:textAlignment="center"
                     android:textColor="@android:color/black"
                     android:textSize="14sp" />
@@ -217,7 +217,7 @@
                     android:layout_weight="1"
                     android:gravity="center_horizontal"
                     android:onClick="graficoTela"
-                    android:text="GANHOS"
+                    android:text="@string/botao_ganho_graficos_espanhol"
                     android:textAlignment="center"
                     android:textColor="@color/colorPrimary"
                     android:textSize="14sp" />
@@ -228,7 +228,7 @@
                     android:layout_weight="1"
                     android:gravity="center_horizontal"
                     android:onClick="graficoTelaDespesas"
-                    android:text="GASTOS"
+                    android:text="@string/botao_despesas_graficos_espanhol"
                     android:textAlignment="center"
                     android:textColor="@color/colorPrimary"
                     android:textSize="14sp" />
@@ -266,7 +266,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="10dp"
                     android:gravity="center_horizontal"
-                    android:text="Saiba mais sobre os desenvolvedores do App"
+                    android:text="@string/descricao_sobre_nos_espanhol"
                     android:textAlignment="center"
                     android:textColor="@android:color/black"
                     android:textSize="14sp" />
@@ -285,7 +285,7 @@
                     android:layout_weight="1"
                     android:gravity="center_horizontal"
                     android:onClick="sobreTela"
-                    android:text="SOBRE NÓS"
+                    android:text="@string/botao_sobre_nos_espanhol"
                     android:textAlignment="center"
                     android:textColor="@color/colorPrimary"
                     android:textSize="14sp" />

@@ -21,11 +21,11 @@ public class SobreActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_sobre);
 
-        getSupportActionBar().setTitle("Sobre nós");
+        getSupportActionBar().setTitle(getString(R.string.text_toobar_sobre_nos_espanhol));
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         //Descrição
-        String descriition = getString(R.string.descricao_tela_sobre);
+        String descriition = getString(R.string.descricao_tela_sobre_espanhol);
 
         //Versao do APP
         Element versionElement = new Element();

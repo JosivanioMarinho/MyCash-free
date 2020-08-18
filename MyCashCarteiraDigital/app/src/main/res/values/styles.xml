@@ -29,7 +29,7 @@
         <item name="searchBackground">@color/colorPrimary</item>
         <item name="android:textColor">@color/textLithing</item>
         <item name="android:textColorHint">@color/textLithing</item>
-        <item name="android:hint">@string/hintSearView</item>
+        <item name="android:hint">@string/hintSearView_espanhol</item>
 
     </style>
 

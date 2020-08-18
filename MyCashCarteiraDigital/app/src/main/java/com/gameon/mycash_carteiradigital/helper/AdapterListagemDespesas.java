@@ -45,8 +45,35 @@ public class AdapterListagemDespesas extends RecyclerView.Adapter<AdapterListage
         Output output = outputList.get(position);
         holder.textDateOutput.setText(output.getDateOutput());
         holder.textDescriptionOutPut.setText(output.getDescriptionOutput());
-        holder.textValueOutput.setText("R$ " + String.format("%.2f", output.getValueOutput()));
-        holder.textTypeOutput.setText(output.getTypeOutput());
+        holder.textValueOutput.setText("€ " + String.format("%.2f", output.getValueOutput()));
+        String tipo="";
+        switch (output.getTypeOutput()){
+            case "Alimentação":
+                tipo = "Alimentación";
+                break;
+            case "Aluguel":
+                tipo = "Alquiler";
+                break;
+            case "Água":
+                tipo = "Agua";
+                break;
+            case "Energia":
+                tipo = "Energía";
+                break;
+            case "Cartão de Crédito":
+                tipo = "Tarjeta de crédito";
+                break;
+            case "Combustível":
+                tipo = "Combustible";
+                break;
+            case "Lazer":
+                tipo = "Ocio";
+                break;
+            case "Outras Despesas":
+                tipo = "Otro";
+                break;
+        }
+        holder.textTypeOutput.setText(tipo);
     }
 
     @Override

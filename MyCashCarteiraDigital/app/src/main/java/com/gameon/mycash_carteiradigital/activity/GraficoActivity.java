@@ -40,11 +40,11 @@ public class GraficoActivity extends AppCompatActivity {
         setSupportActionBar(toobar);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setTitle("Grafico dos ganhos");
+        getSupportActionBar().setTitle(getString(R.string.text_toobar_grafico_ganhos_espanhol));
 
         pieChart = findViewById(R.id.pieChartEarnings);
         //insere a mensagem que aparece caso não tenha dados no chart
-        pieChart.setNoDataText("Sem dados disponíveis");
+        pieChart.setNoDataText(getString(R.string.mensagem_grafico_vasio));
 
 
         //recuperar os dados do BD
@@ -72,17 +72,17 @@ public class GraficoActivity extends AppCompatActivity {
                 case "Salário":
                     double v1 = inp.getValueInput();
                     value1 = value1 + (float) v1;
-                    type1 = inp.getTypeInput();
+                    type1 = "Salario";
                     break;
                 case "Extra":
                     double v2 = inp.getValueInput();
                     value2 = value2 + (float) v2;
-                    type2 = inp.getTypeInput();
+                    type2 = "Extra";
                     break;
                 case "Outros Ganhos":
                     double v3 = inp.getValueInput();
                     value3 = value3 + (float) v3;
-                    type3 = inp.getTypeInput().split(" ")[0];
+                    type3 = "Otro";
                     break;
             }
         }
@@ -116,7 +116,7 @@ public class GraficoActivity extends AppCompatActivity {
         if(inputsChar.size()>0) {
             //Descrição
             Description description = pieChart.getDescription();
-            description.setText("Ganhos");
+            description.setText("Ganancias");
             description.setTextSize(14);
 
             //Configurar legendas

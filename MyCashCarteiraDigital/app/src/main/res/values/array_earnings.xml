@@ -2,9 +2,9 @@
 <resources>
 
     <string-array name="earning_category">
-        <item>@string/salary</item>
-        <item>@string/extra</item>
-        <item>@string/others</item>
+        <item>@string/text_salario_espanhol</item>
+        <item>@string/text_extras_espanhol</item>
+        <item>@string/text_outros_espanhol</item>
     </string-array>
 
 </resources>

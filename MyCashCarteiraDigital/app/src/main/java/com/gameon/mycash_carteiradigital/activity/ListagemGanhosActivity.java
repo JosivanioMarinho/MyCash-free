@@ -71,7 +71,7 @@ public class ListagemGanhosActivity extends AppCompatActivity implements DatePic
         setSupportActionBar(toobar);
 
         //Título
-        getSupportActionBar().setTitle("Listagem de ganhos");
+        getSupportActionBar().setTitle(getString(R.string.text_toobar_tela_listagem_ganhos_espanhol));
         //Botão de voltar
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         //recuperar ID do SearchView
@@ -97,11 +97,11 @@ public class ListagemGanhosActivity extends AppCompatActivity implements DatePic
 
                                 //Diálogo para confirmar exclusão
                                 AlertDialog.Builder alertDialog = new AlertDialog.Builder(ListagemGanhosActivity.this);
-                                alertDialog.setTitle("Confirmar exclusão ");
-                                alertDialog.setMessage("Deseja excluir este item?");
+                                alertDialog.setTitle(getString(R.string.text_title_dialog_excluir_espanhol));
+                                alertDialog.setMessage(R.string.text_descricao_dialog_exccluir_espanhol);
 
                                 //Botão de positivo
-                                alertDialog.setPositiveButton("Sim", new DialogInterface.OnClickListener() {
+                                alertDialog.setPositiveButton("Si", new DialogInterface.OnClickListener() {
                                     @Override
                                     public void onClick(DialogInterface dialog, int which) {
                                        InputDAO inputDAO = new InputDAO(getApplicationContext());
@@ -109,7 +109,7 @@ public class ListagemGanhosActivity extends AppCompatActivity implements DatePic
                                        //Condição para excluir
                                         if (inputDAO.delete(inputSelected)){
                                             //Mensagem de confimação para o usuário
-                                            Toast.makeText(getApplicationContext(), "Item excluido", Toast.LENGTH_SHORT).show();
+                                            Toast.makeText(getApplicationContext(), getString(R.string.toast_excluir), Toast.LENGTH_SHORT).show();
                                             //Recarregar lista de itens
                                             loadList();
                                         }else{
@@ -119,7 +119,7 @@ public class ListagemGanhosActivity extends AppCompatActivity implements DatePic
                                 });
 
                                 //Botão de negativo
-                                alertDialog.setNegativeButton("Não", new DialogInterface.OnClickListener() {
+                                alertDialog.setNegativeButton("No", new DialogInterface.OnClickListener() {
                                     @Override
                                     public void onClick(DialogInterface dialog, int which) {
                                         //Não faz nada

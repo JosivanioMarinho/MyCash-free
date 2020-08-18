@@ -56,7 +56,7 @@ public class CadastroDespesasActivity extends AppCompatActivity implements Adapt
         spinnerCategoryOutput.setOnItemSelectedListener(this);
 
         //Mudar título da toobar
-        getSupportActionBar().setTitle("Adicionar despesa");
+        getSupportActionBar().setTitle(getString(R.string.text_toobar_tela_add_despesas_espanhol));
         //Botão de voltar
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
@@ -127,7 +127,7 @@ public class CadastroDespesasActivity extends AppCompatActivity implements Adapt
             outputDAO.save(output);
 
             //Mensagem para sinalizar que os dados foram salvos
-            Toast.makeText(getApplicationContext(), "Salvo com sucesso!",
+            Toast.makeText(getApplicationContext(), getString(R.string.toast_salvar),
                     Toast.LENGTH_SHORT).show();
 
             //Reiniciar a activity

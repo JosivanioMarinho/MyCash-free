@@ -41,12 +41,12 @@ public class GraficoDespesasActivity extends AppCompatActivity{
         setSupportActionBar(toobar);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setTitle("Grafico das despesas");
+        getSupportActionBar().setTitle(getString(R.string.text_toobar_grafico_despesas_espanhol));
 
         pieChart = findViewById(R.id.pieChartSpendings);
 
         //insere a mensagem que aparece caso não tenha dados no chart
-        pieChart.setNoDataText("Sem dados disponíveis");
+        pieChart.setNoDataText(getString(R.string.mensagem_grafico_vasio));
 
 
         //recuperar os dados do BD
@@ -76,42 +76,42 @@ public class GraficoDespesasActivity extends AppCompatActivity{
                 case "Alimentação":
                     double v1 = out.getValueOutput();
                     value1 = value1 + (float) v1;
-                    type1 = out.getTypeOutput();
+                    type1 = "Alimentación";
                     break;
                 case "Aluguel":
                     double v2 = out.getValueOutput();
                     value2 = value2 + (float) v2;
-                    type2 = out.getTypeOutput();
+                    type2 = "Alquiler";
                     break;
                 case "Água":
                     double v3 = out.getValueOutput();
                     value3 = value3 + (float) v3;
-                    type3 = out.getTypeOutput();
+                    type3 = "Agua";
                     break;
                 case "Energia":
                     double v4 = out.getValueOutput();
                     value4 = value4 + (float) v4;
-                    type4 = out.getTypeOutput();
+                    type4 = "Energía";
                     break;
                 case "Cartão de Crédito":
                     double v5 = out.getValueOutput();
                     value5 = value5 + (float) v5;
-                    type5 = out.getTypeOutput().split(" ")[0];
+                    type5 = "Tarjeta de crédito".split(" ")[0];
                     break;
                 case "Combustível":
                     double v6 = out.getValueOutput();
                     value6 = value6 + (float) v6;
-                    type6 = out.getTypeOutput();
+                    type6 = "Combustible";
                     break;
                 case "Lazer":
                     double v7 = out.getValueOutput();
                     value7 = value7 + (float) v7;
-                    type7 = out.getTypeOutput();
+                    type7 = "Ocio";
                     break;
                 case "Outras Despesas":
                     double v8 = out.getValueOutput();
                     value8 = value8 + (float) v8;
-                    type8 = out.getTypeOutput().split(" ")[0];
+                    type8 = "Otro";
                     break;
             }
         }
@@ -125,7 +125,6 @@ public class GraficoDespesasActivity extends AppCompatActivity{
                 outputsChar.add(new PieEntry(values[i], types[i]));
             }
         }
-
 
         //Array com as cores para o gráfico
         colors = new Integer[]{Color.parseColor("#cf58c2"), Color.parseColor("#28b1ff"),
@@ -143,7 +142,7 @@ public class GraficoDespesasActivity extends AppCompatActivity{
         if(outputsChar.size()>0) {
             //Descrição
             Description description = pieChart.getDescription();
-            description.setText("Despesas");
+            description.setText("Gastos");
             description.setTextSize(14);
 
             //Configurar legendas

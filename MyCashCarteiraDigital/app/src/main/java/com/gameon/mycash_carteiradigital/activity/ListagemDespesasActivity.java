@@ -69,7 +69,7 @@ public class ListagemDespesasActivity extends AppCompatActivity implements DateP
         setSupportActionBar(toobar);
 
         //Título
-        getSupportActionBar().setTitle("Listagem de despesas");
+        getSupportActionBar().setTitle(getString(R.string.text_toobar_tela_listagem_despesas_espanhol));
         //Botão de voltar
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         //Recuperar o ID do material searchView
@@ -95,11 +95,11 @@ public class ListagemDespesasActivity extends AppCompatActivity implements DateP
 
                                 //Diálogo para confirmar exclusão
                                 AlertDialog.Builder alertDialog = new AlertDialog.Builder(ListagemDespesasActivity.this);
-                                alertDialog.setTitle("Confirmar exclusão ");
-                                alertDialog.setMessage("Deseja excluir este item?");
+                                alertDialog.setTitle(getString(R.string.text_title_dialog_excluir_espanhol));
+                                alertDialog.setMessage(getString(R.string.text_descricao_dialog_exccluir_espanhol));
 
                                 //Botão de positivo
-                                alertDialog.setPositiveButton("Sim", new DialogInterface.OnClickListener() {
+                                alertDialog.setPositiveButton("Si", new DialogInterface.OnClickListener() {
                                     @Override
                                     public void onClick(DialogInterface dialog, int which) {
                                         OutputDAO outputDAO = new OutputDAO(getApplicationContext());
@@ -107,7 +107,7 @@ public class ListagemDespesasActivity extends AppCompatActivity implements DateP
                                         //Condição para excluir
                                         if (outputDAO.delete(outputSelected)){
                                             //Mensagem de confimação para o usuário
-                                            Toast.makeText(getApplicationContext(), "Item excluido", Toast.LENGTH_SHORT).show();
+                                            Toast.makeText(getApplicationContext(), getString(R.string.toast_excluir), Toast.LENGTH_SHORT).show();
                                             //Recarregar lista de itens
                                             loadList();
                                         }else{
@@ -117,7 +117,7 @@ public class ListagemDespesasActivity extends AppCompatActivity implements DateP
                                 });
 
                                 //Botão de negativo
-                                alertDialog.setNegativeButton("Não", new DialogInterface.OnClickListener() {
+                                alertDialog.setNegativeButton("No", new DialogInterface.OnClickListener() {
                                     @Override
                                     public void onClick(DialogInterface dialog, int which) {
                                         //Não faz nada

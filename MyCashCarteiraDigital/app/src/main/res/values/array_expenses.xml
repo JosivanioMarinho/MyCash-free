@@ -2,14 +2,14 @@
 <resources>
 
     <string-array name="expenses_category">
-        <item>@string/food</item>
-        <item>@string/rent</item>
-        <item>@string/water</item>
-        <item>@string/electricity</item>
-        <item>@string/credit_card</item>
-        <item>@string/fuel</item>
-        <item>@string/recreation</item>
-        <item>@string/others2</item>
+        <item>@string/text_alimentacao_espanhol</item>
+        <item>@string/text_alugeul_espanhol</item>
+        <item>@string/text_agua_espanhol</item>
+        <item>@string/text_energia_espanhol</item>
+        <item>@string/text_cartao_crediito_espanhol</item>
+        <item>@string/text_combustivel_espanhol</item>
+        <item>@string/text_lazer_espanhol</item>
+        <item>@string/text_outros_esppanhol</item>
     </string-array>
 
 </resources>

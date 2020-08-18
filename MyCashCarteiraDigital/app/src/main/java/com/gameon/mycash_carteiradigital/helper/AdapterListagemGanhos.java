@@ -43,8 +43,20 @@ public class AdapterListagemGanhos extends RecyclerView.Adapter<AdapterListagemG
         Input input = inputList.get(position);;
         holder.textDate.setText(input.getDateInput());
         holder.textDescription.setText(input.getDescriptionInput());
-        holder.textValue.setText("R$ " + String.format("%.2f", input.getValueInput()));
-        holder.textType.setText(input.getTypeInput());
+        holder.textValue.setText("€ " + String.format("%.2f", input.getValueInput()));
+        String tipo="";
+        switch (input.getTypeInput()){
+            case "Salário":
+                tipo = "Salario";
+                break;
+            case "Extra":
+                tipo = "Extra";
+                break;
+            case "Outros Ganhos":
+                tipo = "Otro";
+                break;
+        }
+        holder.textType.setText(tipo);
     }
 
     @Override

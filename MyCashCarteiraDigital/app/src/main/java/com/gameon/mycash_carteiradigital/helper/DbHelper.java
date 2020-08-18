@@ -13,7 +13,8 @@ import com.gameon.mycash_carteiradigital.model.Category;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DbHelper extends SQLiteOpenHelper {
+public class
+DbHelper extends SQLiteOpenHelper {
 
     private static int VERSION = 3;
     private static String NAME_BD = "MYCASH";

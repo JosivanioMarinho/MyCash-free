@@ -23,7 +23,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="10dp"
-            android:text="@string/titleDialogFilterDate"
+            android:text="@string/text_filtro_data_espanhool"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -31,7 +31,7 @@
 
         <Button
             android:id="@+id/start_date_filter_btn"
-            android:text="@string/textButtonDateStart"
+            android:text="@string/text_botao1_filtro_data_espanhol"
             android:textSize="14sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -45,7 +45,7 @@
 
         <Button
             android:id="@+id/last_date_filter_btn"
-            android:text="@string/textButtonDateEnd"
+            android:text="@string/text_botao2_filtro_data_espanhol"
             android:textSize="14sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -78,7 +78,7 @@
             android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp"
             android:background="@android:color/white"
-            android:text="@string/textButtonCancel"
+            android:text="@string/text_botao_cancelar_filtro_data_espanhol"
             android:textColor="@color/colorPrimary"
             android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="@+id/buttonOk"
