@@ -112,6 +112,24 @@ public class CadastroDespesasActivity extends AppCompatActivity implements Adapt
         if (validateFields) {
             Output output = new Output();
 
+            //Tratar campo nulo
+            if (value1.isEmpty() || value1.contentEquals(" ") || value1.contentEquals(".")){
+                //Mensagem para sinalizar que os dados foram salvos
+                Toast.makeText(getApplicationContext(), "Valor inválido",
+                        Toast.LENGTH_SHORT).show();
+                value1 = "0";
+                validateFields = false;
+            }
+
+            //Tratar número igual a zero
+            if (Double.parseDouble(value1) == 0){
+                //Mensagem para sinalizar que os dados foram salvos
+                Toast.makeText(getApplicationContext(), "Valor inválido",
+                        Toast.LENGTH_SHORT).show();
+                validateFields = false;
+
+            }
+
             //Tratar números negativos
             Double valueFinal = Double.parseDouble(value1);
             if (valueFinal < 0){
@@ -123,16 +141,19 @@ public class CadastroDespesasActivity extends AppCompatActivity implements Adapt
             output.setDateOutput(date);
             output.setIdCategory(idCtg);
 
-            //salva no banco de dados
-            outputDAO.save(output);
+            if (validateFields){
+                //salva no banco de dados
+                outputDAO.save(output);
 
-            //Mensagem para sinalizar que os dados foram salvos
-            Toast.makeText(getApplicationContext(), getString(R.string.toast_salvar),
-                    Toast.LENGTH_SHORT).show();
+                //Mensagem para sinalizar que os dados foram salvos
+                Toast.makeText(getApplicationContext(), getString(R.string.toast_salvar),
+                        Toast.LENGTH_SHORT).show();
 
-            //Reiniciar a activity
-            finish();
-            startActivity(new Intent(getApplicationContext(), CadastroDespesasActivity.class));
+                //Reiniciar a activity
+                finish();
+                startActivity(new Intent(getApplicationContext(), CadastroDespesasActivity.class));
+
+            }
 
         } else {
             //Mensagem de aviso casos os campos não tenham sido validados

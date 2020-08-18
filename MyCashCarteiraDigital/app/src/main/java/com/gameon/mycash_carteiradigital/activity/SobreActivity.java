@@ -37,7 +37,7 @@ public class SobreActivity extends AppCompatActivity {
 
                 .addGroup("Anthonny K. N.")
                 .addGitHub("", "GitHub")
-                .addInstagram("", "Instagram")
+                .addInstagram("Anthonny Kyllaweya", "Instagram")
 
                 .addGroup("Emanuel Lopes")
                 .addGitHub("lopessx", "GitHub")
